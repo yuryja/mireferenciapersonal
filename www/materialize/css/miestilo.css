@@ -31,3 +31,10 @@
     float: right;
     width: 85%;
 }
+#then {
+    position: relative;
+    float: right;
+    font-size: 14px !important;
+    color: #000 !important;
+    font-weight: 400 !important;
+}
