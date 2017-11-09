@@ -1,0 +1,33 @@
+.select-wrapper.col.s1.sel {
+    position: relative;
+    width: 10%;
+}
+.form-control.col.s1.tex {
+    position: absolute;
+    top: 0px;
+    float: right;
+    width: 85%;
+    right: 0;
+}
+.input-field.col.s12.sel2 {
+    position: relative;
+    width: 15%;
+}
+.input-field.col.s6.tel {
+    position: relative;
+    top: -77px;
+    float: right;
+    margin-right: 0;
+    background: 000;
+    width: 80%;
+}
+.input-field.col.s6.ant1 {
+    position: relative;
+    width: 10%;
+}
+.input-field.col.s12.ant2 {
+    position: relative;
+    top: -81px;
+    float: right;
+    width: 85%;
+}

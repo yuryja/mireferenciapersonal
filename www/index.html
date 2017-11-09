@@ -1,49 +1,351 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
-    <head>
-        <!--
-        Customize this policy to fit your own app's needs. For more guidance, see:
-            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
-        Some notes:
-            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-                * Enable inline JS: add 'unsafe-inline' to default-src
-        -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-    </body>
+	<head>
+		<!--Import materialize.css-->
+		<link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="materialize/css/miestilo.css"  media="screen,projection"/>
+
+		<!--Let browser know website is optimized for mobile-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	</head>
+
+	<body >
+		<nav class="nav-extended indigo darken-1">
+	    <div class="nav-wrapper">
+	      <a href="#" class="brand-logo">Logo</a>
+	      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+	      <ul id="nav-mobile" class="right hide-on-med-and-down">
+	        <li><a href="sass.html">Sass</a></li>
+	        <li><a href="badges.html">Components</a></li>
+	        <li><a href="collapsible.html">JavaScript</a></li>
+	      </ul>
+	      <ul class="side-nav" id="mobile-demo">
+	        <li><a href="sass.html">Sass</a></li>
+	        <li><a href="badges.html">Components</a></li>
+	        <li><a href="collapsible.html">JavaScript</a></li>
+	      </ul>
+	    </div>
+	    <div class="nav-content">
+	      <ul class="tabs tabs-transparent">
+	        <li class="tab"><a href="#test1">Emisor</a></li>
+	        <li class="tab"><a href="#test2">Receptor</a></li>
+	        <li class="tab"><a href="#test3">Vista Previa</a></li>
+	      </ul>
+	    </div>
+	  </nav>
+	  <div id="test1" class="col s12">
+	  	<div class="container">
+	  		<form action="" method="POST">
+	  			<br>
+		  		<legend class="center">¿Quién emite la referencia?</legend>
+		  		<div class="input-field"> 
+		  			<div class="form-group">
+		  				<label class="control-label" for="">Nombres y Apellidos</label>
+		  				<span class="help-block"></span>
+		  				<input type="text" class="form-control" id="" placeholder="Ej: Pedro Pablo Pérez Peralta">
+		  			</div>
+		  		</div>
+		  		<div class="input-field"> 
+		  			<div class="form-group">
+		  				<label class="control-label" for="">Cédula de identidad</label>
+		  				<span class="help-block"></span>
+		  				<select class="col s1 sel">
+		  		    		<option value="" disabled selected>V/E</option>
+		  		    		<option value="V">V</option>
+		  		    		<option value="E">E</option>
+		  		    	</select>
+		  				<input type="text" class="form-control col s1 tex" id="" placeholder="12345678">
+		  			</div>
+		  		</div>
+				<label for="control-label">Dirección de habitación</label>
+		  		<div class="input-field">
+		  			<textarea id="textarea1" class="materialize-textarea"></textarea>
+
+		  		</div>
+		  		<label for="icon_prefix">Ciudad</label>
+		  		<div class="input-field col s6">
+		  			<input id="icon_prefix" type="text" class="validate">
+		  		</div>
+		  		<label for="icon_prefix">Estado</label>
+				<div class="input-field col s12">
+		  			<select>
+		  		  	    <option value="" disabled selected>Seleccione</option>
+		  			    <option value="1">Amazonas</option>
+		  			    <option value="2">Anzoátegui</option>
+		  			    <option value="3">Apure</option>
+		  			    <option value="4">Aragua</option>
+		  			    <option value="5">Barinas</option>
+		  			    <option value="6">Bolívar</option>
+		  			    <option value="7">Carabobo</option>
+		  			    <option value="8">Cojedes</option>
+		  			    <option value="9">Delta Amacuro</option>
+		  			    <option value="10">Falcón</option>
+		  			    <option value="11">Guárico</option>
+		  			    <option value="12">Lara</option>
+		  			    <option value="13">Mérida</option>
+		  			    <option value="14">Miranda</option>
+		  			    <option value="15">Monagas</option>
+		  			    <option value="16">Nueva Esparta</option>
+		  			    <option value="17">Portuguesa</option>
+		  			    <option value="18">Sucre</option>
+		  			    <option value="19">Táchira</option>
+		  			    <option value="20">Trujillo</option>
+		  			    <option value="21">Vargas</option>
+		  			    <option value="22">Yaracuy</option>
+		  			    <option value="23">Zulia</option>
+		  			    <option value="24">Distrito Capital</option>
+		  			    <option value="25">Dependencias Federales</option>
+		  			</select>
+		  		</div>
+		  		<label for="icon_prefix">Teléfono residencial</label>
+		  		<div class="input-field col s12 sel2">
+		  			  			  		  <select>
+		  			  			  		    <option value="" disabled selected>Cod. Area</option>
+		  			  			  		    <option value="0212">0212</option>
+		  			  			  		    <option value="0234">0234</option>
+		  			  			  		    <option value="0235">0235</option>
+		  			  			  		    <option value="0236">0236</option>
+		  			  			  		    <option value="0237">0237</op0237tion>
+		  			  			  		    <option value="0238">0238</option>
+		  			  			  		    <option value="0239">0239</option>
+		  			  			  		    <option value="0240">0240</option>
+		  			  			  		    <option value="0241">0241</option>
+		  			  			  		    <option value="0242">0242</option>
+		  			  			  		    <option value="0243">0243</option>
+		  			  			  		    <option value="0244">0244</option>
+		  			  			  		    <option value="0245">0245</option>
+		  			  			  		    <option value="0246">0246</option>
+		  			  			  		    <option value="0247">0247</option>
+		  			  			  		    <option value="0248">0248</option>
+		  			  			  		    <option value="0249">0249</option>
+		  			  			  		    <option value="0251">0251</option>
+		  			  			  		    <option value="0252">0252</option>
+		  			  			  		    <option value="0253">0253</option>
+		  			  			  		    <option value="0254">0254</option>
+		  			  			  		    <option value="0255">0255</option>
+		  			  			  		    <option value="0256">0256</option>
+		  			  			  		    <option value="0257">0257</option>
+		  			  			  		    <option value="0258">0258</option>
+		  			  			  		    <option value="0259">0259</option>
+		  			  			  		    <option value="0261">0261</option>
+		  			  			  		    <option value="0262">0262</option>
+		  			  			  		    <option value="0263">0263</option>
+		  			  			  		    <option value="0264">0264</option>
+		  			  			  		    <option value="0265">0265</option>
+		  			  			  		    <option value="0266">0266</option>
+		  			  			  		    <option value="0267">0267</option>
+		  			  			  		    <option value="0268">0268</option>
+		  			  			  		    <option value="0269">0269</option>
+		  			  			  		    <option value="0271">0271</option>
+		  			  			  		    <option value="0272">0272</option>
+		  			  			  		    <option value="0273">0273</option>
+		  			  			  		    <option value="0274">0274</option>
+		  			  			  		    <option value="0275">0275</option>
+		  			  			  		    <option value="0276">0276</option>
+		  			  			  		    <option value="0277">0277</option>
+		  			  			  		    <option value="0278">0278</option>
+		  			  			  		    <option value="0279">0279</option>
+		  			  			  		    <option value="0281">0281</option>
+		  			  			  		    <option value="0282">0282</option>
+		  			  			  		    <option value="0283">0283</option>
+		  			  			  		    <option value="0284">0284</option>
+		  			  			  		    <option value="0285">0285</option>
+		  			  			  		    <option value="0286">0286</option>
+		  			  			  		    <option value="0287">0287</option>
+		  			  			  		    <option value="0288">0288</option>
+		  			  			  		    <option value="0289">0289</option>
+		  			  			  		    <option value="0291">0291</option>
+		  			  			  		    <option value="0292">0292</option>
+		  			  			  		    <option value="0293">0293</option>
+		  			  			  		    <option value="0294">0294</option>
+											<option value="0295">0295</option>
+		  			  			  		    </select>
+		  			</div>		  			
+		  			<div class="input-field col s6 tel">
+		  				<label for="icon_telephone">Número</label>
+            			<input id="icon_telephone" type="tel" class="validate">          				
+        			</div>
+        			<label for="icon_prefix">Tiempo de antiguedad</label>
+        			<div class="input-field col s6 ant1">
+            			<input id="icon_telephone" type="tel" class="validate">
+        			</div>
+        			<div class="input-field col s12 ant2">
+        				<select>
+        				    <option value="" disabled selected>Seleccione</option>
+        				    <option value="años">Años</option>
+        				    <option value="meses">Meses</option>
+        				</select>
+			  		</div>		  		
+		  		<button type="submit" class="btn indigo darken-4 center">Siguiente</button>		  		
+		  	</form>
+	  	</div>
+	  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+	  <div id="test2" class="col s12">
+	  	<div class="container">
+	  		<form action="" method="POST">
+	  			<br>
+		  		<legend class="center">¿Quién recibe la referencia?</legend>
+		  		<div class="input-field"> 
+		  			<div class="form-group">
+		  				<label class="control-label" for="">Nombres y Apellidos</label>
+		  				<span class="help-block"></span>
+		  				<input type="text" class="form-control" id="" placeholder="Ej: Pedro Pablo Pérez Peralta">
+		  			</div>
+		  		</div>
+		  		<div class="input-field"> 
+		  			<div class="form-group">
+		  				<label class="control-label" for="">Cédula de identidad</label>
+		  				<span class="help-block"></span>
+		  				<select class="col s1 sel">
+		  		    		<option value="" disabled selected>V/E</option>
+		  		    		<option value="V">V</option>
+		  		    		<option value="E">E</option>
+		  		    	</select>
+		  				<input type="text" class="form-control col s1 tex" id="" placeholder="12345678">
+		  			</div>
+		  		</div>
+				<label for="control-label">Dirección de habitación</label>
+		  		<div class="input-field">
+		  			<textarea id="textarea1" class="materialize-textarea"></textarea>
+
+		  		</div>
+		  		<label for="icon_prefix">Ciudad</label>
+		  		<div class="input-field col s6">
+		  			<input id="icon_prefix" type="text" class="validate">
+		  		</div>
+		  		<label for="icon_prefix">Estado</label>
+				<div class="input-field col s12">
+		  			<select>
+		  		  	    <option value="" disabled selected>Seleccione</option>
+		  			    <option value="1">Amazonas</option>
+		  			    <option value="2">Anzoátegui</option>
+		  			    <option value="3">Apure</option>
+		  			    <option value="4">Aragua</option>
+		  			    <option value="5">Barinas</option>
+		  			    <option value="6">Bolívar</option>
+		  			    <option value="7">Carabobo</option>
+		  			    <option value="8">Cojedes</option>
+		  			    <option value="9">Delta Amacuro</option>
+		  			    <option value="10">Falcón</option>
+		  			    <option value="11">Guárico</option>
+		  			    <option value="12">Lara</option>
+		  			    <option value="13">Mérida</option>
+		  			    <option value="14">Miranda</option>
+		  			    <option value="15">Monagas</option>
+		  			    <option value="16">Nueva Esparta</option>
+		  			    <option value="17">Portuguesa</option>
+		  			    <option value="18">Sucre</option>
+		  			    <option value="19">Táchira</option>
+		  			    <option value="20">Trujillo</option>
+		  			    <option value="21">Vargas</option>
+		  			    <option value="22">Yaracuy</option>
+		  			    <option value="23">Zulia</option>
+		  			    <option value="24">Distrito Capital</option>
+		  			    <option value="25">Dependencias Federales</option>
+		  			</select>
+		  		</div>
+		  		<label for="icon_prefix">Teléfono residencial</label>
+		  		<div class="input-field col s12 sel2">
+		  			  			  		  <select>
+		  			  			  		    <option value="" disabled selected>Cod. Area</option>
+		  			  			  		    <option value="0212">0212</option>
+		  			  			  		    <option value="0234">0234</option>
+		  			  			  		    <option value="0235">0235</option>
+		  			  			  		    <option value="0236">0236</option>
+		  			  			  		    <option value="0237">0237</op0237tion>
+		  			  			  		    <option value="0238">0238</option>
+		  			  			  		    <option value="0239">0239</option>
+		  			  			  		    <option value="0240">0240</option>
+		  			  			  		    <option value="0241">0241</option>
+		  			  			  		    <option value="0242">0242</option>
+		  			  			  		    <option value="0243">0243</option>
+		  			  			  		    <option value="0244">0244</option>
+		  			  			  		    <option value="0245">0245</option>
+		  			  			  		    <option value="0246">0246</option>
+		  			  			  		    <option value="0247">0247</option>
+		  			  			  		    <option value="0248">0248</option>
+		  			  			  		    <option value="0249">0249</option>
+		  			  			  		    <option value="0251">0251</option>
+		  			  			  		    <option value="0252">0252</option>
+		  			  			  		    <option value="0253">0253</option>
+		  			  			  		    <option value="0254">0254</option>
+		  			  			  		    <option value="0255">0255</option>
+		  			  			  		    <option value="0256">0256</option>
+		  			  			  		    <option value="0257">0257</option>
+		  			  			  		    <option value="0258">0258</option>
+		  			  			  		    <option value="0259">0259</option>
+		  			  			  		    <option value="0261">0261</option>
+		  			  			  		    <option value="0262">0262</option>
+		  			  			  		    <option value="0263">0263</option>
+		  			  			  		    <option value="0264">0264</option>
+		  			  			  		    <option value="0265">0265</option>
+		  			  			  		    <option value="0266">0266</option>
+		  			  			  		    <option value="0267">0267</option>
+		  			  			  		    <option value="0268">0268</option>
+		  			  			  		    <option value="0269">0269</option>
+		  			  			  		    <option value="0271">0271</option>
+		  			  			  		    <option value="0272">0272</option>
+		  			  			  		    <option value="0273">0273</option>
+		  			  			  		    <option value="0274">0274</option>
+		  			  			  		    <option value="0275">0275</option>
+		  			  			  		    <option value="0276">0276</option>
+		  			  			  		    <option value="0277">0277</option>
+		  			  			  		    <option value="0278">0278</option>
+		  			  			  		    <option value="0279">0279</option>
+		  			  			  		    <option value="0281">0281</option>
+		  			  			  		    <option value="0282">0282</option>
+		  			  			  		    <option value="0283">0283</option>
+		  			  			  		    <option value="0284">0284</option>
+		  			  			  		    <option value="0285">0285</option>
+		  			  			  		    <option value="0286">0286</option>
+		  			  			  		    <option value="0287">0287</option>
+		  			  			  		    <option value="0288">0288</option>
+		  			  			  		    <option value="0289">0289</option>
+		  			  			  		    <option value="0291">0291</option>
+		  			  			  		    <option value="0292">0292</option>
+		  			  			  		    <option value="0293">0293</option>
+		  			  			  		    <option value="0294">0294</option>
+											<option value="0295">0295</option>
+		  			  			  		    </select>
+		  			</div>		  			
+		  			<div class="input-field col s6 tel">
+		  				<label for="icon_telephone">Número</label>
+            			<input id="icon_telephone" type="tel" class="validate">          				
+        			</div>        			
+		  		<button type="submit" class="btn indigo darken-4 center">Siguiente</button>		  		
+		  	</form>
+	  	</div>
+	  </div>
+	  <div id="test3" class="col s12">	  	
+	  	Aqui va el PDF
+	  	<h1>Moment.js here now: <span id="then" data-date="Sat Mar 24 2012 08:42:14 GMT-0400 (EDT)"></span></h1>
+	  </div>
+			<!--Import jQuery before materialize.js-->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+		<script src="materialize/js/moment.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('select').material_select();
+			});            
+		</script>
+		<script>
+     var moment = require('moment');
+moment().format();
+console.log(moment);
+    </script>
+
+	</body>
 </html>
