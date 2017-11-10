@@ -36,71 +36,71 @@
 	  </nav>
 	  <div id="test1" class="col s12">
 	  	<div class="container">
-	  		<form action="#" method="POST">
+	  		<form action="" method="POST">
 	  			<br>
 		  		<legend class="center">¿Quién emite la referencia?</legend>
 		  		<div class="input-field"> 
 		  			<div class="form-group">
 		  				<label class="control-label" for="">Nombres y Apellidos</label>
 		  				<span class="help-block"></span>
-		  				<input type="text" class="form-control" id="" placeholder="Ej: Pedro Pablo Pérez Peralta">
+		  				<input type="text" class="form-control" id="" placeholder="Ej: Pedro Pablo Pérez Peralta" onchange="document.getElementById('nombres').innerHTML = valorname = this.value; document.getElementById('nombres1').innerHTML = valorname = this.value;">
 		  			</div>
 		  		</div>
 		  		<div class="input-field"> 
 		  			<div class="form-group">
 		  				<label class="control-label" for="">Cédula de identidad</label>
 		  				<span class="help-block"></span>
-		  				<select class="col s1 sel">
+		  				<select class="col s1 sel" onchange="document.getElementById('VE').innerHTML = valorname = this.value; document.getElementById('VE1').innerHTML = valorname = this.value">
 		  		    		<option value="" disabled selected>V/E</option>
 		  		    		<option value="V">V</option>
 		  		    		<option value="E">E</option>
 		  		    	</select>
-		  				<input type="text" class="form-control col s1 tex" id="" placeholder="12345678">
+		  				<input type="text" class="form-control col s1 tex" id="" placeholder="12345678" onchange="document.getElementById('celula').innerHTML = valorname = this.value; document.getElementById('celula1').innerHTML = valorname = this.value">
 		  			</div>
 		  		</div>
 				<label for="control-label">Dirección de habitación</label>
 		  		<div class="input-field">
-		  			<textarea id="textarea1" class="materialize-textarea"></textarea>
+		  			<textarea id="textarea1" class="materialize-textarea" onchange="document.getElementById('direccion1').innerHTML = valorname = this.value"></textarea>
 
 		  		</div>
 		  		<label for="icon_prefix">Ciudad</label>
 		  		<div class="input-field col s6">
-		  			<input id="icon_prefix" type="text" class="validate" name="ciudad1">
+		  			<input id="icon_prefix" type="text" class="validate" onchange="document.getElementById('city').innerHTML = valorname = this.value; document.getElementById('city1').innerHTML = valorname = this.value; document.getElementById('city2').innerHTML = valorname = this.value">
 		  		</div>
 		  		<label for="icon_prefix">Estado</label>
 				<div class="input-field col s12">
-		  			<select>
+		  			<select onchange="document.getElementById('state').innerHTML = valorname = this.value">
 		  		  	    <option value="" disabled selected>Seleccione</option>
-		  			    <option value="1">Amazonas</option>
-		  			    <option value="2">Anzoátegui</option>
-		  			    <option value="3">Apure</option>
-		  			    <option value="4">Aragua</option>
-		  			    <option value="5">Barinas</option>
-		  			    <option value="6">Bolívar</option>
-		  			    <option value="7">Carabobo</option>
-		  			    <option value="8">Cojedes</option>
-		  			    <option value="9">Delta Amacuro</option>
-		  			    <option value="10">Falcón</option>
-		  			    <option value="11">Guárico</option>
-		  			    <option value="12">Lara</option>
-		  			    <option value="13">Mérida</option>
-		  			    <option value="14">Miranda</option>
-		  			    <option value="15">Monagas</option>
-		  			    <option value="16">Nueva Esparta</option>
-		  			    <option value="17">Portuguesa</option>
-		  			    <option value="18">Sucre</option>
-		  			    <option value="19">Táchira</option>
-		  			    <option value="20">Trujillo</option>
-		  			    <option value="21">Vargas</option>
-		  			    <option value="22">Yaracuy</option>
-		  			    <option value="23">Zulia</option>
-		  			    <option value="24">Distrito Capital</option>
-		  			    <option value="25">Dependencias Federales</option>
+		  			    <option value="Amazonas">Amazonas</option>
+		  			    <option value="Anzoátegui">Anzoátegui</option>
+		  			    <option value="Apure">Apure</option>
+		  			    <option value="Aragua">Aragua</option>
+		  			    <option value="Barinas">Barinas</option>
+		  			    <option value="Bolívar">Bolívar</option>
+		  			    <option value="Carabobo">Carabobo</option>
+		  			    <option value="Cojedes">Cojedes</option>
+		  			    <option value="Delta Amacuro">Delta Amacuro</option>
+		  			    <option value="Falcón">Falcón</option>
+		  			    <option value="Guárico">Guárico</option>
+		  			    <option value="Lara">Lara</option>
+		  			    <option value="Mérida">Mérida</option>
+		  			    <option value="Miranda">Miranda</option>
+		  			    <option value="Monagas">Monagas</option>
+		  			    <option value="Nueva Esparta">Nueva Esparta</option>
+		  			    <option value="Portuguesa">Portuguesa</option>
+		  			    <option value="Sucre">Sucre</option>
+		  			    <option value="Táchira">Táchira</option>
+		  			    <option value="Trujillo">Trujillo</option>
+		  			    <option value="Vargas">Vargas</option>
+		  			    <option value="Yaracuy">Yaracuy</option>
+		  			    <option value="Zulia">Zulia</option>
+		  			    <option value="Distrito Capital">Distrito Capital</option>
+		  			    <option value="Dependencias Federales">Dependencias Federales</option>
 		  			</select>
 		  		</div>
 		  		<label for="icon_prefix">Teléfono residencial</label>
 		  		<div class="input-field col s12 sel2">
-		  			  			  		  <select>
+		  			  			  		  <select onchange="document.getElementById('cod').innerHTML = valorname = this.value">
 		  			  			  		    <option value="" disabled selected>Cod. Area</option>
 		  			  			  		    <option value="0212">0212</option>
 		  			  			  		    <option value="0234">0234</option>
@@ -164,11 +164,11 @@
 		  			</div>		  			
 		  			<div class="input-field col s6 tel">
 		  				<label for="icon_telephone">Número</label>
-            			<input id="icon_telephone" type="tel" class="validate">          				
+            			<input id="icon_telephone" type="tel" class="validate" onchange="document.getElementById('phone').innerHTML = valorname = this.value">          				
         			</div>
         			<label for="icon_prefix">Tiempo de antiguedad</label>
         			<div class="input-field col s6 ant1">
-            			<input id="icon_telephone" type="tel" class="validate">
+            			<input id="icon_telephone"  id="antival" type="tel" class="validate" onchange="document.getElementById('anti').innerHTML = valorname = this.value">
         			</div>
         			<div class="input-field col s12 ant2">
         				<select>
@@ -177,7 +177,7 @@
         				    <option value="meses">Meses</option>
         				</select>
 			  		</div>		  		
-		  		<button type="submit" class="btn indigo darken-4 center" onclick="cargaemisor()">Actualizar</button>		  		
+		  		<!--<button type="submit" class="btn indigo darken-4 center" onclick="cargaemisor()">Actualizar</button>	-->	  		
 		  	</form>
 	  	</div>
 	  </div>
@@ -195,40 +195,40 @@
 
 	  <div id="test2" class="col s12">
 	  	<div class="container">
-	  		<form action="#" method="POST">
+	  		<form action="" method="POST">
 	  			<br>
 		  		<legend class="center">¿Quién recibe la referencia?</legend>
 		  		<div class="input-field"> 
 		  			<div class="form-group">
 		  				<label class="control-label" for="">Nombres y Apellidos</label>
 		  				<span class="help-block"></span>
-		  				<input type="text" class="form-control" id="" placeholder="Ej: Pedro Pablo Pérez Peralta">
+		  				<input type="text" class="form-control" id="" placeholder="Ej: Pedro Pablo Pérez Peralta" onchange="document.getElementById('nombre2').innerHTML = valorname = this.value">
 		  			</div>
 		  		</div>
 		  		<div class="input-field"> 
 		  			<div class="form-group">
 		  				<label class="control-label" for="">Cédula de identidad</label>
 		  				<span class="help-block"></span>
-		  				<select class="col s1 sel">
+		  				<select class="col s1 sel" onchange="document.getElementById('VE2').innerHTML = valorname = this.value">
 		  		    		<option value="" disabled selected>V/E</option>
 		  		    		<option value="V">V</option>
 		  		    		<option value="E">E</option>
 		  		    	</select>
-		  				<input type="text" class="form-control col s1 tex" id="" placeholder="12345678">
+		  				<input type="text" class="form-control col s1 tex" id="" placeholder="12345678" onchange="document.getElementById('celula2').innerHTML = valorname = this.value">
 		  			</div>
 		  		</div>
 				<label for="control-label">Dirección de habitación</label>
 		  		<div class="input-field">
-		  			<textarea id="textarea1" class="materialize-textarea"></textarea>
+		  			<textarea id="textarea1" class="materialize-textarea" onchange="document.getElementById('direccion2').innerHTML = valorname = this.value"></textarea>
 
 		  		</div>
 		  		<label for="icon_prefix" id="ciudad">Ciudad</label>
 		  		<div class="input-field col s6">
-		  			<input id="icon_prefix" type="text" class="validate">
+		  			<input id="icon_prefix" type="text" class="validate" onchange="document.getElementById('city2').innerHTML = valorname = this.value">
 		  		</div>
 		  		<label for="icon_prefix">Estado</label>
 				<div class="input-field col s12">
-		  			<select id="state">
+		  			<select onchange="document.getElementById('state2').innerHTML = valorname = this.value">
 		  		  	    <option value="" disabled selected>Seleccione</option>
 		  			    <option value="Amazonas">Amazonas</option>
 		  			    <option value="Anzoátegui">Anzoátegui</option>
@@ -259,13 +259,13 @@
 		  		</div>
 		  		<label for="icon_prefix">Teléfono residencial</label>
 		  		<div class="input-field col s12 sel2">
-		  			  			  		  <select id="cod">
+		  			  			  		  <select >
 		  			  			  		    <option value="" disabled selected>Cod. Area</option>
 		  			  			  		    <option value="0212">0212</option>
 		  			  			  		    <option value="0234">0234</option>
 		  			  			  		    <option value="0235">0235</option>
 		  			  			  		    <option value="0236">0236</option>
-		  			  			  		    <option value="0237">0237</op0237tion>
+		  			  			  		    <option value="0237">0237</option>
 		  			  			  		    <option value="0238">0238</option>
 		  			  			  		    <option value="0239">0239</option>
 		  			  			  		    <option value="0240">0240</option>
@@ -323,38 +323,109 @@
 		  			</div>		  			
 		  			<div class="input-field col s6 tel">
 		  				<label for="icon_telephone">Número</label>
-            			<input id="icon_telephone" type="tel" class="validate">          				
+            			<input id="icon_telephone" type="tel" class="validate" >          				
         			</div>        			
 		  		<button type="submit" class="btn indigo darken-4 center">Actualizar</button>		  		
 		  	</form>
 	  	</div>
 	  </div>
 	  <div id="test3" class="col s12">	  	
-	  	<div class="container">
-	  		<h4 class="header center">REFERENCIA PERSONAL</h4>
+	  	<div class="container">	  		
 	  		<br>
-	  	<p class="fecha"><label id="city"></label><label id="then"></label></p>
+		  	<p id="fecha"><label id="city"></label>, <label id="then"></label></p>
+		  	<br><br>
+		  	<h4 class="header center">REFERENCIA PERSONAL</h4>
+		  	<br>
+		  	<br>
+		  	<br>
+		  	<p>
+		  		Quien suscribe: <b><label id="nombres"></label></b>, titular de la Cédula de Identidad Nº <b><label id="VE"></label>- <label id="celula"></label></b>, mediante la presente hago constar que conozco de vista trato y comunicación, desde hace más de (<label id="anti"></label>) año(s) al ciudadano/a: <b><label id="nombre2"></label></b>, quien es de nacionalidad Venezolana, mayor de edad, titular de la Cédula de Identidad Nº <b><label id="VE2"></label>- <label id="celula2"></label></b>, y con domicilio en <label id="direccion2"></label>. <label id="city2"></label>, estado <label id="state2"></label>.   
+		  	</p>
+		  	<p>
+		  		Por el conocimiento que tengo de dicho ciudadano, puedo certificar que se trata de una persona seria, responsable, de correcto comportamiento y que goza de solvencia moral en su comunidad.
+		  	</p>
+		  	<p>
+	         Constancia que expido a solicitud de la parte interesada, en <label id="city2"></label>, <label id="dias"></label> del mes de <label id="mes"></label> de <label id="ano"></label>.
+		  	</p>
+		  	<br>
+		  	<br>
+		  	<br>
+		  	<br>
+		  	<br>
+		  	<br>
+		  	<p class="center firma"><b>____________________________________________________</b></p>
+		  	<p class="center firma"><b><label id="nombres1"></label></b></p>
+		  	<p class="center firma"><b>CI: <label id="VE1"></label>- <label id="celula1"></label></b></p>
+		  	<p class="center firma"><b>TLF: <label id="cod"></label>-<label id="phone"></label></b></p>
+		  	<p class="center firma"><b>DIRECCION: <label id="direccion1"></label>. <label id="city1"></label>, ESTADO <label id="state"></label>.</b></p>
 	  	</div>
 	  </div>
 			<!--Import jQuery before materialize.js-->
 		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 		<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 		<script src="materialize/js/moment.js"></script>
+		<script src="materialize/js/moment-with-locales.js"></script>
 		<script>
 			$(document).ready(function() {
 				$('select').material_select();
 			});            
 		</script>
 		<script>
-     		var moment = moment().format('D MMM, YYYY');
-			document.getElementById('then').innerHTML = moment;
-    	</script>
-    	<script>
-    		function cargaemisor() {
-				var ciudad1 = document.getElementById('ciudad1')[0].value;
-				document.getElementById('city').innerHTML = ciudad1;
-			};            
-    	</script>
+			moment.locale('es');
+     		var moment = moment();
+     		var moment_year = moment.format('YYYY');
+     		var moment_day = moment.format('DD'); 
+     		document.getElementById('mes').innerHTML = moment.format('MMMM'); 		
+			document.getElementById('then').innerHTML = moment.format('LL');
+     		
+     		// Validador de año
+     		if (moment_year == '2017') {
+     			document.getElementById('ano').innerHTML = 'dos mil dicisiete';
+     		}
+     		if (moment_year == '2018') {
+     			document.getElementById('ano').innerHTML = 'dos mil dieciocho';
+     		}
+     		if (moment_year == '2019') {
+     			document.getElementById('ano').innerHTML = 'dos mil diecinueve';
+     		}
+     		if (moment_year == '2020') {
+     			document.getElementById('ano').innerHTML = 'dos mil veinte';
+     		}
+     		//Validador de día
+     		if (moment_day == '01') {document.getElementById('dias').innerHTML = 'al primero';}
+     		if (moment_day == '02') {document.getElementById('dias').innerHTML = 'a los dos días';}
+     		if (moment_day == '03') {document.getElementById('dias').innerHTML = 'a los tres días';}
+     		if (moment_day == '04') {document.getElementById('dias').innerHTML = 'a los cuatro días';}
+     		if (moment_day == '05') {document.getElementById('dias').innerHTML = 'a los cinco días';}
+     		if (moment_day == '06') {document.getElementById('dias').innerHTML = 'a los seis días';}
+     		if (moment_day == '07') {document.getElementById('dias').innerHTML = 'a los siete días';}
+     		if (moment_day == '08') {document.getElementById('dias').innerHTML = 'a los ocho días';}
+     		if (moment_day == '09') {document.getElementById('dias').innerHTML = 'a los nueve días';}
+     		if (moment_day == '10') {document.getElementById('dias').innerHTML = 'a los diez días';}
+     		if (moment_day == '11') {document.getElementById('dias').innerHTML = 'a los once días';}
+     		if (moment_day == '12') {document.getElementById('dias').innerHTML = 'a los doce días';}
+     		if (moment_day == '13') {document.getElementById('dias').innerHTML = 'a los trece días';}
+     		if (moment_day == '14') {document.getElementById('dias').innerHTML = 'a los catorce días';}
+     		if (moment_day == '15') {document.getElementById('dias').innerHTML = 'a los quince días';}
+     		if (moment_day == '16') {document.getElementById('dias').innerHTML = 'a los dieciseis días';}
+     		if (moment_day == '17') {document.getElementById('dias').innerHTML = 'a los diecisite días';}
+     		if (moment_day == '18') {document.getElementById('dias').innerHTML = 'a los dieciocho días';}
+     		if (moment_day == '19') {document.getElementById('dias').innerHTML = 'a los diecinueve días';}
+     		if (moment_day == '20') {document.getElementById('dias').innerHTML = 'a los veinte días';}
+     		if (moment_day == '21') {document.getElementById('dias').innerHTML = 'a los veintiuno días';}
+     		if (moment_day == '22') {document.getElementById('dias').innerHTML = 'a los veintidos días';}
+     		if (moment_day == '23') {document.getElementById('dias').innerHTML = 'a los veintitres días';}
+     		if (moment_day == '24') {document.getElementById('dias').innerHTML = 'a los veinticuatro días';}
+     		if (moment_day == '25') {document.getElementById('dias').innerHTML = 'a los veinticinco días';}
+     		if (moment_day == '26') {document.getElementById('dias').innerHTML = 'a los veintiseis días';}
+     		if (moment_day == '27') {document.getElementById('dias').innerHTML = 'a los veintisiete días';}
+     		if (moment_day == '28') {document.getElementById('dias').innerHTML = 'a los veintiocho días';}
+     		if (moment_day == '29') {document.getElementById('dias').innerHTML = 'a los veintinueve días';}
+     		if (moment_day == '30') {document.getElementById('dias').innerHTML = 'a los treinta días';}
+     		if (moment_day == '31') {document.getElementById('dias').innerHTML = 'a los treinta y un días';}
 
+
+
+    	</script>
 	</body>
 </html>

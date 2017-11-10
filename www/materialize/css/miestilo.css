@@ -31,10 +31,22 @@
     float: right;
     width: 85%;
 }
-#then {
-    position: relative;
+
+#fecha {
     float: right;
-    font-size: 14px !important;
-    color: #000 !important;
-    font-weight: 400 !important;
+}
+.firma {
+    margin-bottom: -1%;
+}
+#nombres,#nombre2, #nombres1, #VE, #celula, #VE1, #VE2, #celula2, #celula1, #direccion1, #city, #city1,  #then, #state, #cod, #phone, #anti {
+    color: #000;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+#nombres {
+    font-style: bold;
+}
+#city2, #dias, #mes, #ano, #direccion2, #city2, #state2{
+    color: #000;
+    font-size: 14px;
 }
